@@ -21,7 +21,9 @@ num = rand() % 100;
  isGuessed = false;                              
 while (!isGuessed)                              
 {                                               
-        cout << "";             
+        cout << "Enter an integer greater"             
+                << " than or equal to 0 and "             
+                << "less than 100: ";                  
      cin >> guess;                               
     cout << endl;                               
 
@@ -32,11 +34,13 @@ while (!isGuessed)
         isGuessed = true;                     
    }                                           
 else if (guess < num)                     
-    cout << ""                 
+    cout << "Your guess is lower than the "                
+            << "number.\n Guess again!"                 
             << endl;                           
 else
-           cout << ""                
+           cout << "Your guess is higher than "                 
+                   << "the number.\n Guess again!"                
                    << endl;                          
     } //end while
  return 0;                                       
-}  
+}          
